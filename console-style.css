@@ -36,11 +36,6 @@
     #chat-prep {
       position: absolute;
     }
-
-    #chat-messages {
-        max-height: 100%;
-        overflow-y: scroll;
-    }
     
     #input-wrapper {
       display: inline-block;

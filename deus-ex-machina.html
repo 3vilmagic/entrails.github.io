@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Reading</title>
+    <script src="tarot.js"></script>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+  
+    <div class="navbar">
+      <a href="index">
+        <img src="homeIcon.png" alt="Home Button" width="30" height="30">
+      </a>
+    </div>
+    
+    <h1>
+      Deus Ex Machina
+    </h1> 
+  
+    
+    <div class="navbar" >
+      <div class="navbarButton"><a href="about-me">About Me</a></div>
+      <div class="navbarButton">
+        <a href="text">Stories & Poetry</a>
+      </div>
+      <div class="navbarButton">
+        <a href="nonfic">Nonfiction</a>
+      </div>
+      <div class="navbarButton">
+        <a href="images">Art</a>
+      </div>
+      <div class="navbarButton">
+        <a  href="videos">Videos</a>
+      </div>
+    </div>
+      
+    <div class="mainGrid">
+      <div class="sideBar" style="border-right: solid; text-align: left;">
+
+      </div>
+      
+      <mainContent style="width:80%">
+      
+        <div class="tarotGame">
+          <h1 class="tarot" style="font-size: 36px;">Answers to your Deepest Questions.</h1>
+          <img class="tarot" id="cardImg" src="cards/Card Back.png">
+          <h1 class="tarot" id= "cardName" style="color: White; display: none;">Card Name</h1>
+          <p class="tarot" id= "cardDesc" style="color: White; font-weight: normal; width: 80%; display: none; margin-top: none;">Card Description</p>
+          <button class="tarot" id="drawBtn" onclick="drawCard()">Ask the Machine</button>
+        </div>
+      
+      </mainContent>
+
+      <div class="sideBar" style="border-left: solid; text-align: right;">
+          
+      </div>
+        
+    </div>
+    
+    <div class="footer">
+        <a href="mailto:kayladianegarcia123@gmail.com">Contact</a>
+        <a href="https://forms.gle/VdkcBwP1wLxdQuAm7">Developer Feedback</a>
+      </div>
+    
+    <script src="tarot.js"></script>
+  </body>
+</html>

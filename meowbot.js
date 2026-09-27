@@ -4,6 +4,7 @@ let conversationHistory = []; // "memory"
 
 async function sendMessage() {
   const input = document.getElementById("chat-input");
+  const wrapper = document.getElementById("input-wrapper");
   const message = input.value.trim();
   if (!message) return;
 
@@ -14,6 +15,9 @@ async function sendMessage() {
   // Add to history
   conversationHistory.push({ role: "user", content: message });
 
+  // Remove input while bot is thinking
+  wrapper.style.display = "none";
+  
   // Show a loading indicator
   addMessageToChat("bot", "...");
 
@@ -39,9 +43,16 @@ async function sendMessage() {
     conversationHistory.push({ role: "assistant", content: data.reply });
 
   } catch (err) {
+    
     removeLastMessage();
     addMessageToChat("bot", "network's being weird rn, try again");
     console.error(err);
+    
+  } finally {
+    
+    wrapper.style.display = "";
+    input.focus();
+    
   }
 }
 

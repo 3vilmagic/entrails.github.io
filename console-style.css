@@ -32,6 +32,11 @@
       width: 100%;
       padding: 0px 0px 0px 50px;
     }
+
+    #chat-messages {
+        max-height: 50vh;
+        overflow-y: auto;
+    }
     
     #chat-prep {
       position: absolute;

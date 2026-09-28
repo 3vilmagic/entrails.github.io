@@ -1,19 +1,21 @@
 
 pre {
-    line-height: 0.9;
     padding-left: 1vw;
     padding-right: 1vw;
     text-align: center;
     white-space: pre;
     max-width: 90vw;
-    font-size: clamp(1px, 0.8vw, 16px);
 }
 
 pre.mobile {
     display: none;
+    font-size: 16px;
+    line-height: 1.2;
 }
 pre.desktop {
     display: block;
+    line-height: 0.9;
+    font-size: clamp(1px, 0.8vw, 16px);
 }
 @media screen and (max-width: 480px) {
     pre.mobile {

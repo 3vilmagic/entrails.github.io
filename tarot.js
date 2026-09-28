@@ -1,6 +1,6 @@
 const cardNameArr = ["The Fool", "The Magician", "The High Priestess", "The Empress", "The Emperor",
 "The Hierophant", "The Lovers", "The Chariot", "Strength", "The Hermit", "Wheel of Fortune", 
-"Justice", "The Hanged Man", "Death", "Temperance", "The Devil", "The Tower", "The Star",
+"Justice", "<a href="sh3ll">The Hanged Man</a>", "Death", "Temperance", "The Devil", "The Tower", "The Star",
 "The <a href="l00k">Moon</a>", "The Sun", "Judgement", "The World"];
 
 const cardImgArr = ["cards/0_The Fool.png", "cards/1_The Magician.png", "cards/2_The High Priestess.png",
@@ -19,7 +19,7 @@ const cardDescArr = ["Despite its name, the Fool card is one of the most positiv
 "This card usually represents connection, honest communication, vulnerability, and calling on its origins, determining the values you want to move through life with.",
 "This card typically calls to mind willpower and self control... It’s a card about action, not reflection. Move forward in control, be brave. ",
 "Strength goes hand in hand with two other Major Arcana cards, Justice and Temperance. Together they are known as the cardinal virtues... Strength is about endurance and stamina. Knowing that you can handle whatever life throws your way.",
-"The Hermit card represents taking time to withdraw and reflect internally. Look <a href="sh3ll">inside</a> yourself for the answers you seek. Sometimes The Hermit represents a cross-roads or new life direction. A reminder to check in with yourself before taking a leap.",
+"The Hermit card represents taking time to withdraw and reflect internally. Look inside yourself for the answers you seek. Sometimes The Hermit represents a cross-roads or new life direction. A reminder to check in with yourself before taking a leap.",
 "If you reveal this card in a tarot reading, it typically is a reminder of the constant change that surrounds us. A reminder that things will be good, but they will also inevitably be bad. Celebrate the highs and accept the lows. ",
 "Like Strength and Temperance, Justice is one of the cardinal virtues... This card is about owning up to your actions. It’s about taking accountability and expecting a fair response from the universe. Always consider the ramifications of your actions and decisions. ",
 "Though ominous visually, this card reminds us that we must release the old in order to evolve to the new... The card depicts self-sacrifice, not punishment. It’s about being suspended in time... Pausing in order to see more clearly. ",

@@ -36,6 +36,18 @@
     #chat-messages {
         max-height: 50vh;
         overflow-y: auto;
+        scrollbar-width: thin;    
+        scrollbar-color: white transparent;
+    }
+
+    #chat-messages::-webkit-scrollbar {
+      width: 6px;
+    }
+    #chat-messages::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    #chat-messages::-webkit-scrollbar-thumb {
+      background: white;
     }
     
     #chat-prep {

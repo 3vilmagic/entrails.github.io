@@ -13,11 +13,11 @@ pre.mobile {
     display: none;
 }
 pre.desktop {
-    display: auto;
+    display: block;
 }
 @media screen and (max-width: 480px) {
     pre.mobile {
-        display: auto;
+        display: block;
     }
     pre.desktop {
         display: none;

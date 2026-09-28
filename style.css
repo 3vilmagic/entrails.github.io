@@ -4,13 +4,13 @@ pre {
     white-space: pre;
     max-width: 90vw;
     margin: 0 auto;
+    padding: 10px;
 }
 
 pre.mobile {
     display: none;
     font-size: 16px;
     line-height: 1.2;
-    padding: 10px;
 }
 pre.desktop {
     display: block;

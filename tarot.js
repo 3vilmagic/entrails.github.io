@@ -1,7 +1,7 @@
 const cardNameArr = ["The Fool", "The Magician", "The High Priestess", "The Empress", "The Emperor",
 "The Hierophant", "The Lovers", "The Chariot", "Strength", "The Hermit", "Wheel of Fortune", 
-"Justice", "<a href="sh3ll">The Hanged Man</a>", "Death", "Temperance", "The Devil", "The Tower", "The Star",
-"The <a href="l00k">Moon</a>", "The Sun", "Judgement", "The World"];
+"Justice", "<a href='sh3ll'>The Hanged Man</a>", "Death", "Temperance", "The Devil", "The Tower", "The Star",
+"The <a href='l00k'>Moon</a>", "The Sun", "Judgement", "The World"];
 
 const cardImgArr = ["cards/0_The Fool.png", "cards/1_The Magician.png", "cards/2_The High Priestess.png",
 "cards/3_The Empress.png", "cards/4_The Emperor.png", "cards/5_The Heirophant.png", "cards/6_The Lovers.png",
@@ -28,8 +28,8 @@ const cardDescArr = ["Despite its name, the Fool card is one of the most positiv
 "This card represents being caught up in bad behavior or habits. Giving in to our darker side. When you get this card in a reading, it’s time to try to take a step back and look at yourself more clearly. And take more control of your life. Time to reframe your thinking. ",
 "This card typically means major change. Often destructive in nature. This change will result in personal growth or positive change, but you need to get through it to get to the other side. ",
 "The Star has a gentle message. After going through the trials and tribulations... you are now able to focus on your inner being. It's calm after the storm. It’s about new hope.",
-"The <a href="l00k">Moon</a> typically suggests illusion. Things are perhaps not as they appear. Some readers also interpret this card as a reminder to face the hard things that we’ve endured, in order to prevent those traumas from impacting our future. It plays on illusion and deception and calls to question the root of our fears.",
-"Unlike The <a href="l00k">Moon</a> card, The Sun tarot card is overwhelmingly positive... Just as the sun provides us with energy and life, this card represents abundance and success. Though the pairing of The <a href="l00k">Moon</a> and The Sun reminds me that we must take the good with the bad.",
+"The <a href='l00k'>Moon</a> typically suggests illusion. Things are perhaps not as they appear. Some readers also interpret this card as a reminder to face the hard things that we’ve endured, in order to prevent those traumas from impacting our future. It plays on illusion and deception and calls to question the root of our fears.",
+"Unlike The <a href='l00k'>Moon</a> card, The Sun tarot card is overwhelmingly positive... Just as the sun provides us with energy and life, this card represents abundance and success. Though the pairing of The <a href='l00k'>Moon</a> and The Sun reminds me that we must take the good with the bad.",
 "This card calls to mind an awakening or re-birth. Applying your learning and life experience to unlock a higher level of spirituality or wisdom. Some readers often mention a sense of community here too. Use those around you to help support you as you take on the next journey.",
 "The World represents a wholeness. It stands for achievement and completion... It’s a moment of triumph before the cycle restarts again... Now is the time to reflect on where you are in life, all you have achieved and what is next. "];
 

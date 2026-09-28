@@ -39,6 +39,7 @@ function drawCard() {
   const cardImg = document.getElementById('cardImg');
   const cardDesc = document.getElementById('cardDesc');
   const drawBtn = document.getElementById('drawBtn');
+  const cardSrc = document.getElementById('cardSrc');
   
   // get random card number
   let cardIndex = Math.floor(Math.random() * 22);
@@ -51,5 +52,6 @@ function drawCard() {
   // show results
   cardName.style.display = 'block';
   cardDesc.style.display = 'block';
+  cardSrc.style.display = 'block';
   drawBtn.style.display = 'none';
 }

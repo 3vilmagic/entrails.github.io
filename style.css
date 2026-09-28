@@ -2,9 +2,10 @@
 pre {
     padding-left: 1vw;
     padding-right: 1vw;
-    text-align: center;
+    text-align: left;
     white-space: pre;
     max-width: 90vw;
+    margin: 0 auto;
 }
 
 pre.mobile {

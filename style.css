@@ -9,6 +9,21 @@ pre {
     font-size: clamp(1px, 0.8vw, 16px);
 }
 
+pre.mobile {
+    display: none;
+}
+pre.desktop {
+    display: auto;
+}
+@media screen and (max-width: 480px) {
+    pre.mobile {
+        display: auto;
+    }
+    pre.desktop {
+        display: none;
+    }
+}
+
  .navbar {
     display: flex;
     justify-content: space-between;

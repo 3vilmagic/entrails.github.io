@@ -5,6 +5,7 @@ pre {
     padding-right: 1vw;
     text-align: center;
     white-space: pre;
+    max-width: 90vw;
     font-size: clamp(1px, 0.8vw, 16px);
 }
 

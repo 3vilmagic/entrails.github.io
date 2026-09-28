@@ -1,7 +1,5 @@
 
 pre {
-    padding-left: 1vw;
-    padding-right: 1vw;
     text-align: left;
     white-space: pre;
     max-width: 90vw;
@@ -12,6 +10,7 @@ pre.mobile {
     display: none;
     font-size: 16px;
     line-height: 1.2;
+    padding: 10px;
 }
 pre.desktop {
     display: block;

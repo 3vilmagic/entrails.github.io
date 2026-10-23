@@ -24,6 +24,9 @@ pre.desktop {
     pre.desktop {
         display: none;
     }
+    div.sideBar {
+        display: none;
+    }
 }
 
  .navbar {
@@ -60,6 +63,7 @@ pre.desktop {
   }
   
   .sideBar{
+    display: block;
     flex-basis: auto;
     width: 10%;
     word-wrap: break-word;

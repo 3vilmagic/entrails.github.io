@@ -64,7 +64,7 @@ pre.desktop {
   .sideBar{
     display: block;
     flex-basis: auto;
-    width: 10%;
+    width: 10vw;
     word-wrap: break-word;
     font-size: 16px;
     padding: 10px;

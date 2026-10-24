@@ -1,11 +1,9 @@
 
 pre {
-    text-align: center;
+    text-align: left;
     white-space: pre;
     margin: 0 auto;
     padding: 10px;
-    max-width: 84%;
-    min-width: 84%;
 }
 
 pre.mobile {
@@ -16,7 +14,7 @@ pre.mobile {
 pre.desktop {
     display: block;
     line-height: 0.9;
-    font-size: clamp(1px, 0.8vw, 16px);
+    font-size: clamp(1px, 0.6vw, 16px);
 }
 @media screen and (max-width: 480px) {
     pre.mobile {

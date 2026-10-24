@@ -1,8 +1,7 @@
 
 pre {
-    text-align: left;
+    text-align: center;
     white-space: pre;
-    max-width: 90vw;
     margin: 0 auto;
     padding: 10px;
 }

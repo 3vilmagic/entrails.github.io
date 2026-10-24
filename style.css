@@ -60,6 +60,7 @@ pre.desktop {
     justify-content: center;
     box-sizing: border-box;
     border-top: solid;
+    border-bottom: solid;
     min-width: 100%;
     min-height: 60vh;
     max-width: 100%;
@@ -87,7 +88,6 @@ pre.desktop {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    border-top: solid;
     padding: 20px;
     font-size: 20px;
     text-decoration-line: underline;

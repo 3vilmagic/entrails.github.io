@@ -4,6 +4,7 @@ pre {
     white-space: pre;
     margin: 0 auto;
     padding: 10px;
+    max-width: 84vw;
 }
 
 pre.mobile {

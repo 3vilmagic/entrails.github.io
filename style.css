@@ -25,7 +25,7 @@ pre.desktop {
     text-align: center;
     display: block;
     line-height: 0.9;
-    font-size: clamp(6px, calc((100cqw - 20px) / 90.4), 20px);
+    font-size: 0.8vw;
 }
 @media screen and (max-width: 480px) {
     pre.mobile {

@@ -1,6 +1,13 @@
-body {
-    margin: 2vh 2vw 2vh 2vw;
-}
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    margin: 0 2vw;
+    }
 
 pre {
     text-align: left;
@@ -138,18 +145,6 @@ pre.desktop {
     text-decoration: underline;
   }
   
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:black;
-    color:white;
-    font-family:'Courier New', Courier, monospace;
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 90vw;
-    }
 h1 {
     font-size: 48px;
     font-family: 'Courier New', Courier, monospace;

@@ -10,21 +10,22 @@
     }
 
 pre {
-    text-align: left;
     white-space: pre;
     margin: 0 auto;
     padding: 10px;
 }
 
 pre.mobile {
+    text-align: left;
     display: none;
     font-size: 16px;
     line-height: 1.2;
 }
 pre.desktop {
+    text-align: center;
     display: block;
     line-height: 0.9;
-    clamp(6px, calc((100cqw - 20px) / 90.4), 20px);
+    font-size: clamp(6px, calc((100cqw - 20px) / 90.4), 20px);
 }
 @media screen and (max-width: 480px) {
     pre.mobile {

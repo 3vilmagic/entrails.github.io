@@ -85,6 +85,7 @@ const magnetList = document.getElementById("magnetList");
 magnets.forEach((item) => {
             const li = document.createElement("li");
             li.innerText = item;
+            li.className = "magnet";
             magnetList.appendChild(li);
         });
 

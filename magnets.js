@@ -82,7 +82,7 @@ const magnets = [
 // POPULATE MAGNETS
 const magnetList = document.getElementById("magnetList");
 
-magnets.forEach((item) => {
+magnets.forEach((item, i) => {
   const el = document.createElement("div");
   el.className = "magnet";
   el.innerText = item;
@@ -160,7 +160,3 @@ function returnToList(m) {
     .find((w) => +w.dataset.order > order);
   magnetList.insertBefore(m, next || null);
 }
-  }
-  dragged = null;
-});
- 

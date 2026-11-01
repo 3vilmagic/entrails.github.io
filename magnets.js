@@ -85,7 +85,7 @@ const magnetList = document.getElementById("magnetList");
 magnets.forEach((item) => {
             const li = document.createElement("li");
             li.innerText = item;
-            list.appendChild(li);
+            magnetList.appendChild(li);
         });
 
 // MAGNET LAYERNG
@@ -120,7 +120,7 @@ function dragElement(elmnt) {
   }
 
   function elementDrag(e) {
-    e = e || magnet.event;
+    e = e || window.event;
     e.preventDefault();
     pos1 = pos3 - e.clientX;
     pos2 = pos4 - e.clientY;

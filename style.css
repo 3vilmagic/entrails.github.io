@@ -203,7 +203,10 @@ hr {
   margin: 15px;
 }
 
-#board { display: flex; height: 90vh; }
+#board {
+  display: flex;
+  flex-direction: column;
+  height: 90vh; }
 
 #fridge {
   width: 50%;

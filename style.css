@@ -150,6 +150,7 @@ pre.desktop {
 
 #homeBtn {
   margin: 10px;
+  justify-content: start;
 }
   
 h1 {

@@ -203,8 +203,41 @@ hr {
   margin: 15px;
 }
 
+#board { display: flex; height: 90vh; }
+
+#fridge {
+  width: 50%;
+  padding: 20px;
+  line-height: 2.2;
+  align-content: flex-start;
+  border: 1px solid white;
+}
+
+#magnetList {
+  width: 50%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 8px;
+  align-content: start;
+  overflow-y: auto;
+}
+
 .magnet {
-  position: absolute;
-  list-style: none;
+  display: inline-block;
+  margin: 3px;
+  padding: 4px 8px;
+  background: #fff;
+  border: 1px solid #333;
+  text-align: center;
   cursor: grab;
+  user-select: none;
+  list-style: none;
+}
+
+.magnet.dragging {
+  position: fixed;
+  z-index: 1000;
+  margin: 0;
+  pointer-events: none;
 }

@@ -206,7 +206,6 @@ hr {
 #board {
   display: flex;
   flex-direction: column;
-  height: 90vh;
 }
 
 #magnetList {

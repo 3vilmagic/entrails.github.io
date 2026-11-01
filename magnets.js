@@ -83,65 +83,59 @@ const magnets = [
 const magnetList = document.getElementById("magnetList");
 
 magnets.forEach((item) => {
-            const li = document.createElement("li");
-            li.innerText = item;
-            li.className = "magnet";
-            magnetList.appendChild(li);
-        });
-
-// MAGNET LAYERNG
-let topZ = 100;
-
-document.addEventListener('mousedown', (e) => {
-  const win = e.target.closest('.magnet');
-  if (win) win.style.zIndex = ++topZ;
+  const el = document.createElement("div");
+  el.className = "magnet";
+  el.innerText = item;
+  magnetList.appendChild(el);
 });
 
-// DRAGGABLE MAGNETS
+// PICK WORD
 
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    elmnt.onmousedown = dragMouseDown;
+let dragged = null, offX = 0, offY = 0;
 
-  function dragMouseDown(e) {
-    e = e || magnet.event;
-    if (e.target.tagName === 'INPUT') {
-    return; 
-    }
-    e.preventDefault();
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    document.onmousemove = elementDrag;
-    
-    document.querySelectorAll('iframe').forEach(function(f) {
-    f.style.pointerEvents = 'none';
-  });
-  
-  }
-
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-  }
-
-  function closeDragElement() {
-    document.onmouseup = null;
-    document.onmousemove = null;
-    
-    document.querySelectorAll('iframe').forEach(function(f) {
-    f.style.pointerEvents = 'auto';
-  });
-  
-  }
-}
-
-document.querySelectorAll('.magnet').forEach(function(win) {
-  dragElement(win);
+document.addEventListener("mousedown", (e) => {
+  const m = e.target.closest(".magnet");
+  if (!m) return;
+  e.preventDefault();
+  const r = m.getBoundingClientRect();
+  offX = e.clientX - r.left;
+  offY = e.clientY - r.top;
+  m.style.width = r.width + "px";
+  m.classList.add("dragging");
+  m.style.left = r.left + "px";
+  m.style.top = r.top + "px";
+  dragged = m;
 });
+
+// MOVE WORD
+
+document.addEventListener("mousemove", (e) => {
+  if (!dragged) return;
+  dragged.style.left = e.clientX - offX + "px";
+  dragged.style.top = e.clientY - offY + "px";
+});
+
+// DROP WORD
+document.addEventListener("mouseup", (e) => {
+  if (!dragged) return;
+  dragged.classList.remove("dragging");
+  dragged.style.cssText = "";
+
+  const f = fridge.getBoundingClientRect();
+  const overFridge = e.clientX >= f.left && e.clientX <= f.right &&
+                     e.clientY >= f.top && e.clientY <= f.bottom;
+
+  if (overFridge) {
+    const before = [...fridge.querySelectorAll(".magnet")].find((w) => {
+      if (w === dragged) return false;
+      const r = w.getBoundingClientRect();
+      return e.clientY < r.top ||
+             (e.clientY < r.bottom && e.clientX < r.left + r.width / 2);
+    });
+    fridge.insertBefore(dragged, before || null);
+  } else {
+    magnetList.appendChild(dragged);
+  }
+  dragged = null;
+});
+ 

@@ -86,40 +86,54 @@ magnets.forEach((item) => {
   const el = document.createElement("div");
   el.className = "magnet";
   el.innerText = item;
+  el.dataset.order = i;
   magnetList.appendChild(el);
 });
 
-// PICK WORD
-
-let dragged = null, offX = 0, offY = 0;
+// MOVE WORD
+let dragged = null, pending = null;
+let startX = 0, startY = 0, offX = 0, offY = 0;
 
 document.addEventListener("mousedown", (e) => {
   const m = e.target.closest(".magnet");
   if (!m) return;
   e.preventDefault();
-  const r = m.getBoundingClientRect();
-  offX = e.clientX - r.left;
-  offY = e.clientY - r.top;
-  m.style.width = r.width + "px";
-  m.classList.add("dragging");
-  m.style.left = r.left + "px";
-  m.style.top = r.top + "px";
-  dragged = m;
+  pending = m;
+  startX = e.clientX;
+  startY = e.clientY;
 });
 
-// MOVE WORD
-
+// ON DRAG
 document.addEventListener("mousemove", (e) => {
+  if (pending && !dragged &&
+      Math.hypot(e.clientX - startX, e.clientY - startY) > 5) {
+    const r = pending.getBoundingClientRect();
+    offX = startX - r.left;
+    offY = startY - r.top;
+    pending.style.width = r.width + "px";
+    pending.classList.add("dragging");
+    dragged = pending;
+  }
   if (!dragged) return;
   dragged.style.left = e.clientX - offX + "px";
   dragged.style.top = e.clientY - offY + "px";
 });
 
-// DROP WORD
 document.addEventListener("mouseup", (e) => {
-  if (!dragged) return;
-  dragged.classList.remove("dragging");
-  dragged.style.cssText = "";
+  if (!pending) return;
+  const m = pending;
+  pending = null;
+
+// ON CLICK
+  if (!dragged) {
+    if (m.parentElement === fridge) returnToList(m);
+    return;
+  }
+
+// ON DROP
+  dragged = null;
+  m.classList.remove("dragging");
+  m.style.cssText = "";
 
   const f = fridge.getBoundingClientRect();
   const overFridge = e.clientX >= f.left && e.clientX <= f.right &&
@@ -127,14 +141,25 @@ document.addEventListener("mouseup", (e) => {
 
   if (overFridge) {
     const before = [...fridge.querySelectorAll(".magnet")].find((w) => {
-      if (w === dragged) return false;
+      if (w === m) return false;
       const r = w.getBoundingClientRect();
       return e.clientY < r.top ||
              (e.clientY < r.bottom && e.clientX < r.left + r.width / 2);
     });
-    fridge.insertBefore(dragged, before || null);
+    fridge.insertBefore(m, before || null);
   } else {
-    magnetList.appendChild(dragged);
+    returnToList(m);   
+  }
+});
+
+// RETURN WORD TO LIST
+    
+function returnToList(m) {
+  const order = +m.dataset.order;
+  const next = [...magnetList.querySelectorAll(".magnet")]
+    .find((w) => +w.dataset.order > order);
+  magnetList.insertBefore(m, next || null);
+}
   }
   dragged = null;
 });

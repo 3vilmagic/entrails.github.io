@@ -131,8 +131,12 @@ document.addEventListener("mouseup", (e) => {
 
 // ON CLICK
   if (!dragged) {
-    if (m.parentElement === fridge) returnToList(m);
-    return;
+    if (m.parentElement === fridge) {
+    returnToList(m);
+  } else {
+    fridge.appendChild(m);
+  }
+  return;
   }
 
 // ON DROP

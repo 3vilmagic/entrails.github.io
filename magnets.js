@@ -75,13 +75,15 @@ const magnets = [
   "mechanic",
   "expand",
   "mountain",
-  "explained",
+  "explain",
   "abstraction",
-  "s", "s", "s", "s", "s", "s", "s", "s", "s", "s", "s", "s", "s", "s", "s",
-  "es",
-  "ing", "ing", "ing", "ing", "ing", "ing", "ing", "ing", 
-  ",", ",", ",", ",", ",",
-  ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", "."
+  "s", "s", "s", "s", "s", 
+  "es", "es", "es", "es", "es",
+  "d", "d", "d", "d", "d", 
+  "ed", "ed", "ed", "ed", "ed",
+  "ing", "ing", "ing", "ing", "ing", 
+  ",", ",", ",", ",", ",", ",", ",", ",", ",", ",",
+  ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", 
 ];
 
 // POPULATE MAGNETS

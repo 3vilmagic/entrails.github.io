@@ -41,7 +41,7 @@ pre.desktop {
 
  .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     word-wrap: break-word;
   }

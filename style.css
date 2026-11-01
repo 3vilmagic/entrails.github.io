@@ -147,6 +147,10 @@ pre.desktop {
     border-color: #4D5C91;
     text-decoration: underline;
   }
+
+#homeBtn {
+  margin: 10px;
+}
   
 h1 {
     font-size: 48px;

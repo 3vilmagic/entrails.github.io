@@ -82,7 +82,7 @@ const magnets = [
 // POPULATE MAGNETS
 const magnetList = document.getElementById("magnetList");
 
-magnetList.forEach((item) => {
+magnets.forEach((item) => {
             const span = document.createElement("span");
             span.innerText = item;
             magnetList.appendChild(span);

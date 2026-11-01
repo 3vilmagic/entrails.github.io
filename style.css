@@ -202,3 +202,9 @@ ul {
 hr {
   margin: 15px;
 }
+
+.magnet {
+  position: absolute;
+  list-style: none;
+  cursor: grab;
+}

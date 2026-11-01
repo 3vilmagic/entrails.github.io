@@ -83,9 +83,9 @@ const magnets = [
 const magnetList = document.getElementById("magnetList");
 
 magnets.forEach((item) => {
-            const span = document.createElement("span");
-            span.innerText = item;
-            magnetList.appendChild(span);
+            const li = document.createElement("li");
+            li.innerText = item;
+            list.appendChild(li);
         });
 
 // MAGNET LAYERNG

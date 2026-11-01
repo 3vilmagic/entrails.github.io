@@ -233,6 +233,7 @@ hr {
   border: 1px solid white;
   cursor: grab;
   user-select: none;
+  box-sizing: border-box;
 }
 
 .magnet.dragging {

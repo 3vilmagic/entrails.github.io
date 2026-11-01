@@ -1,3 +1,93 @@
+// MAGNET ARRAY
+const magnets = [
+  "a", "a", "a", "a", "a",
+  "I",
+  "an", "an",
+  "to", "to", "to",
+  "of", "of", "of", "of",
+  "am",
+  "it",
+  "me",
+  "is", "is", "is",
+  "on",
+  "or",
+  "in",
+  "eye",
+  "and",
+  "all",
+  "out",
+  "was", "was",
+  "one",
+  "now", "now",
+  "the",
+  "hole",
+  "code", "code", "code",
+  "what", "what", "what",
+  "like", "like", "like", "like", "like", "like",
+  "back",
+  "this",
+  "that",
+  "into",
+  "game",
+  "once", "once",
+  "zero",
+  "true",
+  "black",
+  "radio",
+  "pulse",
+  "press",
+  "nodes",
+  "paths",
+  "truly",
+  "stars",
+  "watch",
+  "bleed",
+  "shell",
+  "erode",
+  "blind",
+  "false",
+  "blink",
+  "escape",
+  "tracks",
+  "making", "making",
+  "angels",
+  "snakes",
+  "storms",
+  "fridge",
+  "levels",
+  "entire",
+  "neurons",
+  "singing",
+  "circles",
+  "quantum",
+  "ditches",
+  "magnets",
+  "fifteen",
+  "speaking", "speaking",
+  "writhing",
+  "galaxies",
+  "hardware",
+  "charades",
+  "lifetime",
+  "infomania",
+  "supernova",
+  "exploding",
+  "mechanics",
+  "expanding",
+  "mountains",
+  "explained",
+  "abstraction"
+];
+
+// POPULATE MAGNETS
+const magnetList = document.getElementById("magnetList");
+
+magnetList.forEach((item) => {
+            const span = document.createElement("span");
+            span.innerText = item;
+            magnetList.appendChild(span);
+        });
+
 // MAGNET LAYERNG
 let topZ = 100;
 

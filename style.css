@@ -161,6 +161,7 @@ pre.desktop {
 }
 
 #menu {
+  max-height: 30px;
   margin: 0px;
   padding: 0px;
   border: none;

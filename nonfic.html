@@ -8,11 +8,27 @@
   </head>
   <body>
   
-    <div class="navbar" id="homeBtn">
-      <a href="index">
-        <img src="homeIcon.png" alt="Home Button" width="30" height="30">
-      </a>
-    </div>
+    <div class="navbar" id="homeBtn" style="justify-content: space-between;">
+          <a href="index">
+            <img src="homeIcon.png" alt="Home Button" width="30" height="30">
+          </a>
+          <div id="menu" class="mobile">
+              <button id="menu-open" onclick="document.getElementById('menu-content').style.display = 'block'; document.getElementById('menu-close').style.display = 'block'; this.style.display = 'none'" style="padding: 0px; border: none;"><img src="menu.png" alt="Menu" width="30" height="30"></button>
+              <button id="menu-close" onclick="document.getElementById('menu-content').style.display = 'none'; document.getElementById('menu-open').style.display = 'block'; this.style.display = 'none'" style="padding: 0px; display: none; border: none;"><img src="menu-close.png" alt="Menu" width="30" height="30"></button>
+              <div id="menu-content" style="margin-top: 5px;">
+                <div style="margin: 15px;">
+                  <a href="deus-ex-machina" style="display:block; text-decoration:underline;">
+                      <img src="cards/Card Back.png" width="50">Ask the Machine
+                  </a>
+                </div>
+                <div style="margin: 15px;">
+                  <a href="magnets" style="display:block; text-decoration:underline;">
+                      <img src="fridge.png" width="50">Create A Poem
+                  </a>
+                </div>
+              </div>
+          </div>
+      </div>
     
     <div style="display: flex;">
       <h1>

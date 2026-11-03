@@ -157,7 +157,8 @@ pre.desktop {
 }
 
 #menu {
-  margin: 10px;
+  margin: 0px;
+  padding: 0px;
   border: none;
   justify-content: end;
   display: none;

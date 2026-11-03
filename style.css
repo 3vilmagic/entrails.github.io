@@ -38,7 +38,7 @@ pre.desktop {
         display: none;
     }
     button.mobile {
-        display: inline-block;
+        display: block !important;
     }
 }
 

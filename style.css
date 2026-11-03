@@ -70,7 +70,7 @@ pre.desktop {
     max-width: 100%;
   }
   
-  mainContent {
+  .mainContent {
     display: block;
     flex: 1 1 0;
     min-width: 0;

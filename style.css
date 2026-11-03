@@ -37,8 +37,8 @@ pre.desktop {
     div.sideBar {
         display: none;
     }
-    #menu {
-        display: block;
+    button.mobile {
+        display: inline-block;
     }
 }
 
@@ -158,8 +158,16 @@ pre.desktop {
 
 #menu {
   margin: 10px;
+  border: none;
   justify-content: end;
-  display: block;
+  display: none;
+  position: relative;
+}
+
+#menu-content {
+  display: none;
+  position: absolute;
+  text-decoration: none;
 }
   
 h1 {

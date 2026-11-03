@@ -167,6 +167,7 @@ pre.desktop {
 
 #menu-content {
   display: none;
+  right: 0;
   position: absolute;
   text-decoration: none;
 }

@@ -164,7 +164,7 @@ pre.desktop {
   margin: 0px;
   padding: 0px;
   border: none;
-  justify-self: end;
+  float: right;
   display: none;
   position: relative;
 }

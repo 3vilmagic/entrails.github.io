@@ -72,6 +72,7 @@ pre.desktop {
   
   .mainContent {
     display: block;
+    flex-direction: column;
     padding-bottom: 50px;
   }
   

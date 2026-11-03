@@ -37,6 +37,9 @@ pre.desktop {
     div.sideBar {
         display: none;
     }
+    #menu {
+        display: block;
+    }
 }
 
  .navbar {
@@ -151,6 +154,12 @@ pre.desktop {
 #homeBtn {
   margin: 10px;
   justify-content: start;
+}
+
+#menu {
+  margin: 10px;
+  justify-content: end;
+  display: block;
 }
   
 h1 {

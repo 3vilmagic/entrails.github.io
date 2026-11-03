@@ -72,8 +72,6 @@ pre.desktop {
   
   .mainContent {
     display: block;
-    flex: 1 1 0;
-    min-width: 0;
     padding-bottom: 50px;
   }
   

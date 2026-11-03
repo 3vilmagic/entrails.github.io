@@ -37,7 +37,7 @@ pre.desktop {
     div.sideBar {
         display: none;
     }
-    button.mobile {
+    div.mobile {
         display: block !important;
     }
 }

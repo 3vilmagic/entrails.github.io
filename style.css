@@ -145,7 +145,7 @@ pre.desktop {
   }
 
   .poem {
-    text-align: left;
+    text-align: left !important;
   }
   
   #drawBtn {
